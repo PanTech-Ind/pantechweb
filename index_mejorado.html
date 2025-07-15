@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PANTECH - Fábrica de Máquinas Gastronómicas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6cfd3.js" crossorigin="anonymous"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Montserrat', sans-serif; background: #ffffff; color: #000; }
+    header { background: #00294d; color: white; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; font-size: 1.5rem; }
+    nav { display: flex; gap: 1.5rem; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: #90caf9; }
+    .hero { background: url('https://images.unsplash.com/photo-1581092334648-e71a1d5f1d4c?fit=crop&w=1350&q=80') center/cover no-repeat; color: white; text-align: center; padding: 7rem 2rem; }
+    .hero h2 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 1px 1px 5px #000; }
+    .hero p { font-size: 1.2rem; }
+    .section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
+    .products { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 2rem; }
+    .product { text-align: center; max-width: 220px; transition: transform 0.3s; }
+    .product:hover { transform: scale(1.05); }
+    .product img { width: 100%; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    .ventajas { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-around; text-align: center; margin-top: 3rem; }
+    .ventaja { flex: 1 1 200px; padding: 1rem; }
+    .ventaja i { font-size: 2rem; color: #00294d; margin-bottom: 0.5rem; }
+    footer { background: #00294d; color: white; text-align: center; padding: 2rem; }
+    iframe { width: 100%; border: 0; border-radius: 10px; height: 300px; margin-top: 1rem; }
+    @media (max-width: 768px) {
+      nav { flex-direction: column; gap: 1rem; }
+      .hero h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PANTECH</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h2>Bienvenidos a PANTECH</h2>
+    <p>Fábrica de máquinas gastronómicas industriales</p>
+  </section>
+
+  <section id="catalogo" class="section">
+    <h2 style="text-align:center">Catálogo de Productos</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1625242171451-24c2a6f2021e?fit=crop&w=300&q=80" alt="Sobadora">
+        <h3>Sobadoras</h3>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1604999333679-ec43d1a81f8e?fit=crop&w=300&q=80" alt="Laminadora">
+        <h3>Laminadoras</h3>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1603048298340-4025f1ba7e57?fit=crop&w=300&q=80" alt="Amasadora">
+        <h3>Amasadoras</h3>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1615389290878-9f9aa15c3dbb?fit=crop&w=300&q=80" alt="Mezcladora">
+        <h3>Mezcladoras</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align:center">¿Por qué elegirnos?</h2>
+    <div class="ventajas">
+      <div class="ventaja">
+        <i class="fas fa-tools"></i>
+        <h4>70 años de experiencia</h4>
+        <p>Somos fabricantes con trayectoria en el rubro gastronómico.</p>
+      </div>
+      <div class="ventaja">
+        <i class="fas fa-award"></i>
+        <h4>Calidad garantizada</h4>
+        <p>Máquinas duraderas, hechas con materiales resistentes.</p>
+      </div>
+      <div class="ventaja">
+        <i class="fas fa-handshake"></i>
+        <h4>Atención personalizada</h4>
+        <p>Te asesoramos antes y después de tu compra.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section">
+    <h2 style="text-align:center">Sobre Nosotros</h2>
+    <p><strong>PANTECH</strong> es una empresa familiar argentina con más de 70 años fabricando máquinas gastronómicas industriales.</p>
+    <p>Nos destacamos por el compromiso, la calidad y la atención personalizada en cada venta.</p>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2 style="text-align:center">Contacto</h2>
+    <p style="text-align:center"><strong>WhatsApp:</strong> 11 70 84 89 52<br>
+    <strong>Dirección:</strong> Dr A Melo 3527, Lanús, Buenos Aires<br>
+    <strong>Email:</strong> <a href="mailto:pantechindustria@gmail.com">pantechindustria@gmail.com</a></p>
+    <iframe src="https://maps.google.com/maps?q=dr%20a%20melo%203527%20lanus&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PANTECH - Industria Argentina. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
